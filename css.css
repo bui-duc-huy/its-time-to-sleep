@@ -1,0 +1,71 @@
+body{
+    margin: 0;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Quicksand', sans-serif;
+  }
+button,
+button::after {
+    -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+        transition: all 0.3s;
+}
+button {
+    background: none;
+    border: 0.05em solid #fff;
+    border-radius: 0.25em;
+    color: #fff;
+    display: block;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 1em auto;
+    padding: 1em 3em;
+    position: relative;
+    top: 17em;
+}
+
+button::before,
+button::after {
+    background: #fff;
+    content: '';
+    position: absolute;
+    z-index: -1;
+}
+button:hover{
+    color : #3399FF;
+    border: 1px solid #3399FF
+}
+#showtime{
+    padding: 0.1em;
+    margin: 0.1px;
+    color: aquamarine;
+    position: relative;
+    font-size:5em;
+    text-align: center;
+    top: 2.3em;
+}
+#message {
+    font-size: 1em;
+    text-align: center;
+}
+@media screen and (min-width :600px){
+    button{
+        top : 13em;
+        font-size: 1.6em
+    }
+    #showtime{
+        top: 1.5em;
+        font-size: 8em
+    }
+}
+@media screen and (min-width :1280px){
+    button{
+        top : 9em;
+        font-size: 1.6em
+    }
+    #showtime{
+        top: 0.8em;
+        font-size: 10em
+    }
+}
